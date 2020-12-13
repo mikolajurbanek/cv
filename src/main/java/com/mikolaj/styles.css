@@ -1,0 +1,169 @@
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    perspective: 5000px;
+    background-color: #c6e7f6;
+    font-family: "Roboto", sans-serif;
+}
+
+.profPic {
+    display: flex;
+    margin: 12%;
+    padding: 4%;
+    width: 10vw;
+    height: auto;
+    box-shadow: 5px 10px 18px #888888;
+    transition: all 0.5s ease;
+
+}
+
+
+.page-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 130vh;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform-style: preserve-3d;
+    width: 90%;
+    height: 90%;
+    background-color: #ffffff;
+    box-shadow: 5px 10px 18px #888888;
+    position: relative;
+}
+
+.infos{
+    display: flex;
+    flex-direction: row;
+    margin-right: 40%;
+}
+
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 13%;
+    width: 20vw;
+    /*height: 100%;*/
+    font-size: 1vw;
+}
+
+.bars {
+    margin-bottom: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 80%;
+    font-size: 2vh;
+}
+
+.bar {
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    background-color: #ffffff;
+    height: 10vh;
+    width: 100%;
+    box-shadow: 5px 10px 18px #888888;
+    visibility: visible;
+    opacity: 1;
+    transition:visibility 0.3s linear,opacity 0.3s linear;
+    /*position: relative;*/
+}
+
+
+
+
+#bike{
+    /*transition: all 0.5s ease;*/
+    size: 10vh;
+    position: absolute;
+    left: 10vw;
+    top: 45vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#chess{
+    size: 12vh;
+    position: absolute;
+    right: 10vw;
+    top: 60vh;
+    display: flex;
+    flex-direction: row;
+}
+
+
+#travel{
+    size: 12vh;
+    position: absolute;
+    left: 10vw;
+    top: 75vh;
+    display: flex;
+    flex-direction: row;
+}
+
+
+#investment{
+    size: 14vh;
+    position: absolute;
+    right: 10vw;
+    top:  90vh;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.about-hidden{
+    display: none;
+    font-size: 1.2vw;
+}
+
+
+.picBike{
+
+    width: 8vw;
+    height: auto;
+    /*box-shadow: 5px 10px 18px #888888;*/
+    transition: all 0.5s ease;
+}
+
+
+.picChess{
+    width: 7vw;
+    height: auto;
+    transition: all 0.5s ease;
+}
+
+.picPlane{
+    width: 7vw;
+    height: auto;
+    transition: all 0.5s ease;
+}
+
+.picCrypto{
+    width: 9vw;
+    height: auto;
+    transition: all 0.5s ease;
+}
+
+
+
+
+
+
