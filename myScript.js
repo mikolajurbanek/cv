@@ -66,27 +66,28 @@ pageContainer.addEventListener('mouseleave', (e) =>{
 
 
 aboutMe.addEventListener('click', (e)=>{
-    if(educationFlag === 0 && projectsFlag === 0 && aboutFlag===0) {
+    if(technologiesFlag === 0 && skillsFlag === 0 && educationFlag === 0 && aboutFlag ===0  && projectsFlag ===0 ) {
         aboutMe.style.transform = "translateZ(150px)";
-        projects.style.opacity = "0";
-        skills.style.opacity = "0";
-        technologies.style.opacity = "0";
-        education.style.opacity = "0";
+        aboutMe.style.top = "30vh"
+        projects.style.display = "none";
+        skills.style.display = "none"
+        technologies.style.display = "none"
+        education.style.display = "none"
         aboutHidden.style.display = "flex";
         aboutMe.style.transform = "translateZ(0px)";
         aboutMe.style.transition = "all 0.2s ease";
         aboutFlag = 1;
     } else {
-        if(aboutFlag===1) {
+        if(aboutFlag === 1){
             aboutMeFunc();
-            aboutFlag = 0;
+            aboutFlag=0;
         }
-    }
 
+    }
 });
 
 education.addEventListener('click', (e)=>{
-    if(educationFlag === 0 && projectsFlag === 0 && aboutFlag===0) {
+    if(technologiesFlag === 0 && skillsFlag === 0 && educationFlag === 0 && aboutFlag ===0  && projectsFlag ===0 ) {
         education.style.transform = "translateZ(150px)";
         education.style.top = "30vh"
         projects.style.display = "none";
@@ -110,7 +111,7 @@ education.addEventListener('click', (e)=>{
 
 
 projects.addEventListener('click', (e)=>{
-    if(projectsFlag === 0 && educationFlag === 0 && aboutFlag ===0) {
+    if(technologiesFlag === 0 && skillsFlag === 0 && educationFlag === 0 && aboutFlag ===0  && projectsFlag ===0 ) {
         projects.style.transform = "translateZ(150px)";
         projects.style.top = "30vh"
         education.style.display = "none";
@@ -130,7 +131,7 @@ projects.addEventListener('click', (e)=>{
 });
 
 skills.addEventListener('click', (e)=>{
-    if(skillsFlag === 0 && educationFlag === 0 && aboutFlag ===0) {
+    if(technologiesFlag === 0 && skillsFlag === 0 && educationFlag === 0 && aboutFlag ===0  && projectsFlag ===0 ) {
         skills.style.transform = "translateZ(150px)";
         skills.style.top = "30vh"
         education.style.display = "none";
@@ -150,7 +151,7 @@ skills.addEventListener('click', (e)=>{
 });
 
 technologies.addEventListener('click', (e)=>{
-    if(technologiesFlag === 0 && skillsFlag === 0 && educationFlag === 0 && aboutFlag ===0 ) {
+    if(technologiesFlag === 0 && skillsFlag === 0 && educationFlag === 0 && aboutFlag ===0  && projectsFlag ===0) {
         technologies.style.transform = "translateZ(150px)";
         technologies.style.top = "30vh"
         education.style.display = "none";
@@ -173,10 +174,12 @@ technologies.addEventListener('click', (e)=>{
 
 function aboutMeFunc(){
     aboutMe.style.transform = "translateZ(0px)";
-    projects.style.opacity = "1";
-    skills.style.opacity = "1";
-    technologies.style.opacity = "1";
-    education.style.opacity = "1";
+    // aboutMe.style.top = "45vh";
+    aboutMe.style.transition = "all 0.5s ease";
+    projects.style.display = "flex";
+    skills.style.display = "flex";
+    technologies.style.display = "flex";
+    education.style.display = "flex";
     aboutHidden.style.display = "none";
     aboutMe.style.transform = "translateZ(70px)";
 }

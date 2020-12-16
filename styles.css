@@ -234,7 +234,7 @@ body {
 .technologies-hidden{
     position: absolute;
     top:50vh;
-    margin: 2%;
+    margin: 3%;
     flex-wrap: wrap;
     display: none;
     font-size: 1.2vw;
@@ -341,7 +341,6 @@ body {
 
 #picLucidChart{
     margin-top: 3%;
-    margin-left: 7%;
     transition: all 0.5s ease;
 }
 
