@@ -158,6 +158,7 @@ technologies.addEventListener('click', (e)=>{
         skills.style.display = "none";
         aboutMe.style.display = "none";
         technologiesHidden.style.display = "flex";
+
         technologies.style.transform = "translateZ(0px)";
         technologies.style.transition = "all 0.2s ease";
         technologiesFlag = 1;

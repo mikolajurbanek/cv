@@ -155,7 +155,7 @@ body {
     size: 14vh;
     position: absolute;
     left: 10vw;
-    top:  65vh;
+    top:  55vh;
     display: flex;
     flex-direction: row;
 }
@@ -164,7 +164,7 @@ body {
     size: 14vh;
     position: absolute;
     left: 10vw;
-    top:  90vh;
+    top:  85vh;
     display: flex;
     flex-direction: row;
 }
@@ -180,15 +180,6 @@ body {
     color: black;
 }
 
-
-#yt{
-    size: 14vh;
-    position: absolute;
-    left: 10vw;
-    top:  90vh;
-    display: flex;
-    flex-direction: row;
-}
 
 #team-work{
     size: 14vh;
@@ -241,8 +232,13 @@ body {
 }
 
 .technologies-hidden{
+    position: absolute;
+    top:50vh;
+    margin: 2%;
+    flex-wrap: wrap;
     display: none;
     font-size: 1.2vw;
+
 }
 
 .picBike{
@@ -307,6 +303,83 @@ body {
     transition: all 0.5s ease;
 }
 
+.tech-pics{
+    margin: 2%;
+    height: 8vh;
+    width: auto;
+    transition: all 0.5s ease;
+}
+
+#picSpring{
+    margin-top: 9%;
+    height: 6vh;
+    width: auto;
+    transition: all 0.5s ease;
+}
+
+#picTrello{
+    margin-top: 5%;
+    width: auto;
+    height: 4vh;
+    transition: all 0.5s ease;
+}
+
+
+#picInteliJ{
+    margin-top: 4%;
+    height: 7vh;
+    width: auto;
+    transition: all 0.5s ease;
+}
+
+#picJava{
+    height: 18vh;
+    width: auto;
+
+    transition: all 0.5s ease;
+}
+
+#picLucidChart{
+    margin-top: 3%;
+    margin-left: 7%;
+    transition: all 0.5s ease;
+}
+
+#picPostgresql{
+    height: 15vh;
+    width: auto;
+    transition: all 0.5s ease;
+}
+#picPython{
+    margin-top: 5%;
+    height: 6vh;
+    width: auto;
+
+    transition: all 0.5s ease;
+}
+
+#picVS{
+    margin-top: 4%;
+    height: 7vh;
+    width: auto;
+    transition: all 0.5s ease;
+}
+
+#picGitTech{
+    height: 11vh;
+    width: auto;
+    transition: all 0.5s ease;
+}
+
+#picTrio{
+    height: 9vh;
+    width: auto;
+    transition: all 0.5s ease;
+}
+
+#picFigma{
+    margin-top: 3%;
+}
 
 
 
