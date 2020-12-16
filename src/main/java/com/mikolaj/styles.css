@@ -6,6 +6,7 @@ body {
     perspective: 5000px;
     background-color: #c6e7f6;
     font-family: "Roboto", sans-serif;
+
 }
 
 .profPic {
@@ -78,7 +79,7 @@ body {
     font-size: 2vw;
     background-color: #ffffff;
     height: 10vh;
-    width: 100%;
+    width: 80%;
     box-shadow: 5px 10px 18px #888888;
     visibility: visible;
     opacity: 1;
@@ -86,15 +87,37 @@ body {
     /*position: relative;*/
 }
 
+#about-me{
+    position: absolute;
+    top: 30vh;
+    /*transition: all 1s ease ;*/
+}
 
+#education{
+    position: absolute;
+    top: 45vh;
+}
 
+#projects{
+    position: absolute;
+    top: 60vh;
+}
+
+#skills{
+    position: absolute;
+    top: 75vh;
+}
+
+#technologies{
+    position: absolute;
+    top: 90vh;
+}
 
 #bike{
-    /*transition: all 0.5s ease;*/
-    size: 10vh;
+    size: 9vh;
     position: absolute;
     left: 10vw;
-    top: 45vh;
+    top: 50vh;
     display: flex;
     flex-direction: row;
 }
@@ -103,7 +126,7 @@ body {
     size: 12vh;
     position: absolute;
     right: 10vw;
-    top: 60vh;
+    top: 65vh;
     display: flex;
     flex-direction: row;
 }
@@ -113,7 +136,7 @@ body {
     size: 12vh;
     position: absolute;
     left: 10vw;
-    top: 75vh;
+    top: 80vh;
     display: flex;
     flex-direction: row;
 }
@@ -123,23 +146,109 @@ body {
     size: 14vh;
     position: absolute;
     right: 10vw;
+    top:  95vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#university {
+    size: 14vh;
+    position: absolute;
+    left: 10vw;
+    top:  65vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#codecool{
+    size: 14vh;
+    position: absolute;
+    left: 10vw;
     top:  90vh;
     display: flex;
     flex-direction: row;
 }
 
+#github{
+    size: 14vh;
+    position: absolute;
+    left: 10vw;
+    top:  65vh;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: black;
+}
+
+
+#yt{
+    size: 14vh;
+    position: absolute;
+    left: 10vw;
+    top:  90vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#team-work{
+    size: 14vh;
+    position: absolute;
+    left: 10vw;
+    top:  60vh;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: black;
+}
+
+
+#adaptivity{
+    size: 14vh;
+    position: absolute;
+    left: 10vw;
+    top:  75vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#creativity{
+    size: 14vh;
+    position: absolute;
+    right: 10vw;
+    top:  90vh;
+    display: flex;
+    flex-direction: row;
+}
 
 .about-hidden{
     display: none;
     font-size: 1.2vw;
 }
 
+.education-hidden{
+    display: none;
+    font-size: 1.2vw;
+}
+
+.projects-hidden{
+    display: none;
+    font-size: 1.2vw;
+}
+
+.skills-hidden{
+    display: none;
+    font-size: 1.2vw;
+}
+
+.technologies-hidden{
+    display: none;
+    font-size: 1.2vw;
+}
 
 .picBike{
 
     width: 8vw;
     height: auto;
-    /*box-shadow: 5px 10px 18px #888888;*/
     transition: all 0.5s ease;
 }
 
@@ -161,6 +270,43 @@ body {
     height: auto;
     transition: all 0.5s ease;
 }
+
+.picUniversity{
+    width: 9vw;
+    height: auto;
+    transition: all 0.5s ease;
+}
+
+.picCodecool{
+    width: 9vw;
+    height: auto;
+    transition: all 0.5s ease;
+}
+
+.picGithub{
+    width: 12vw;
+    height: auto;
+    transition: all 0.5s ease;
+}
+
+.picTeamwork{
+    width: 10vw;
+    height: auto;
+    transition: all 0.5s ease;
+}
+
+.picAdaptivity{
+    width: 10vw;
+    height: auto;
+    transition: all 0.5s ease;
+}
+
+.picCreativity{
+    width: 10vw;
+    height: auto;
+    transition: all 0.5s ease;
+}
+
 
 
 
