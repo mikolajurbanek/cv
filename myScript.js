@@ -3,48 +3,78 @@
 
 const page = document.querySelector(".page");
 const pageContainer = document.querySelector(".page-container");
+//lol
+const tabs = Array.from(document.querySelectorAll('.bar'));
+const content = Array.from(document.querySelectorAll('.content'));
+
 
 let flag = 0;
 
 
 // items
-const pic = document.querySelector(".picture img")
-
-const aboutMe = document.querySelector("#about-me");
-const education = document.querySelector("#education");
-const projects = document.querySelector("#projects");
-const skills = document.querySelector("#skills");
-const technologies = document.querySelector("#technologies");
-
-// hidden items
-const aboutHidden = document.querySelector(".about-hidden");
-const educationHidden = document.querySelector(".education-hidden");
-const projectsHidden = document.querySelector(".projects-hidden");
-const skillsHidden = document.querySelector(".skills-hidden");
-const technologiesHidden = document.querySelector(".technologies-hidden");
+const pic = document.querySelector(".picture img");
 
 
-// function hideAllBars() {
-//     aboutMe.style.visibility = "hidden";
-//     education.style.visibility = "hidden";
-//     projects.style.visibility = "hidden";
-//     skills.style.visibility = "hidden";
-//     technologies.style.visibility = "hidden";
-// }
+function hideTab(e) {
+    e.style.opacity = 0;
+    e.style.pointerEvents = 'none';
+}
 
+function showTab(e) {
+    e.style.opacity = 1;
+    e.style.pointerEvents = 'auto';
+}
 
-document.querySelectorAll(".bar").forEach(item => {
-    item.addEventListener('click', () => {
-        if(flag===0) {
-            item.style.animation= "dupa 1s forwards";
-            // item.style.transform= "translateZ (20px)"
+function setTabUnactive(e, idx) {
+    e.setAttribute('active', false);
+    e.style.transform = `translateY(${idx * 15}vh)`;
+}
+
+function setTabActive(e) {
+    showTab(e)
+    e.setAttribute('active', true);
+    e.style.transform = `translateY(0px)`;
+}
+
+function toggleActive(e, idx) {
+    const elementActive = e.getAttribute('active') === 'true';
+    if (elementActive)  {
+        setTabUnactive(e, idx)
+        hideContent()
+    } else {
+        setTabActive(e)
+        showContent(idx);
+    }
+
+    tabs.filter((_, i) => i !== idx).forEach((tab, i) => {
+        if (elementActive) {
+            showTab(tab)
+        } else {
+            hideTab(tab)
         }
-        else{
-            item.style.animation= "zupa 2s forwards";
+    })
 
-        }
+}
+
+tabs.forEach((tab, idx) => {
+    tab.onclick = (e) => toggleActive(e.target, idx)
+    setTabUnactive(tab, idx)
 })
-});
+
+function hideContent() {
+    content.forEach((content, _)=>{
+        content.style.visibility = 'hidden';
+    });
+
+}
+
+function showContent(idx) {
+    let demandedTag = '#content'+ idx;
+    const content = document.querySelector(`${demandedTag}`);
+    content.style.visibility = 'visible'
+}
+
+hideContent();
 
 
 // mouse move
@@ -68,96 +98,4 @@ pageContainer.addEventListener('mouseleave', () =>{
     page.style.transition = "all 1s ease";
     pic.style.transform = "translateZ(0px)";
 });
-
-
-aboutMe.addEventListener('click',()=>{
-    if(flag === 0) {
-        projects.style.visibility = "hidden";
-        skills.style.visibility = "hidden";
-        technologies.style.visibility = "hidden";
-        education.style.visibility = "hidden";
-        aboutHidden.style.display = "flex";
-        flag = 1;
-    } else {
-        visibleAllBars();
-            flag=0;
-    }
-});
-
-
-education.addEventListener('click',()=>{
-    if(flag ===0 ) {
-        projects.style.visibility = "hidden";
-        skills.style.visibility = "hidden"
-        technologies.style.visibility = "hidden"
-        aboutMe.style.visibility = "hidden"
-        educationHidden.style.display = "flex";
-        flag = 1;
-    } else {
-        visibleAllBars();
-            flag=0;
-    }
-});
-
-
-projects.addEventListener('click',()=>{
-    if(flag ===0 ) {
-        education.style.visibility = "hidden";
-        skills.style.visibility = "hidden"
-        technologies.style.visibility = "hidden"
-        aboutMe.style.visibility = "hidden"
-        projectsHidden.style.display = "flex";
-        flag = 1;
-    } else {
-        visibleAllBars();
-            flag = 0;
-    }
-});
-
-
-skills.addEventListener('click', ()=>{
-    if(flag ===0 ) {
-        education.style.visibility = "hidden";
-        projects.style.visibility = "hidden";
-        technologies.style.visibility = "hidden";
-        aboutMe.style.visibility = "hidden";
-        skillsHidden.style.display = "flex";
-        flag = 1;
-    } else {
-        visibleAllBars();
-            flag = 0;
-    }
-});
-
-technologies.addEventListener('click',()=>{
-    if(flag ===0) {
-        education.style.visibility = "hidden";
-        projects.style.visibility = "hidden";
-        skills.style.visibility = "hidden";
-        aboutMe.style.visibility = "hidden";
-        technologiesHidden.style.display = "flex";
-        flag = 1;
-    } else {
-        visibleAllBars();
-            flag = 0;
-    }
-});
-
-
-function visibleAllBars() {
-    projects.style.visibility = "visible";
-    skills.style.visibility = "visible";
-    technologies.style.visibility = "visible";
-    aboutMe.style.visibility = "visible";
-    education.style.visibility = "visible";
-    aboutHidden.style.display= "none";
-    projectsHidden.style.display= "none";
-    skillsHidden.style.display= "none";
-    technologiesHidden.style.display= "none";
-    educationHidden.style.display= "none";
-}
-
-
-
-
 

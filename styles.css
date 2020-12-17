@@ -66,75 +66,38 @@ body {
     height: 80%;
     font-size: 2vh;
     visibility: visible;
+    position: relative;
 }
 
 .bar {
 
+
+    font-size: 2vw;
+    height: 10vh;
+    box-shadow: 5px 10px 18px #888888;
+    transform: translateZ(10px);
+    width: 80%;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2vw;
-    background-color: #ffffff;
-    height: 10vh;
-    width: 80%;
-    box-shadow: 5px 10px 18px #888888;
-    position: absolute;
-    transform: translateZ(10px);
-
-
+    left: 10%;
+    transition: 0.3s ease all;
+    cursor: pointer;
 }
 
 .bar:hover{
-    transition: all 0.3s ease;
-    transform: translateZ(120px);
+    transform: translateZ(70px);
 }
 
 
-@keyframes dupa {
-    0% {
-    }
-    100% {
-        top: 28vh;
-        background-color: #c6e7f6;
-    }
-}
-
-@keyframes zupa {
-    0%{
-        top: 28vh;
-    }
-    100%{
-        top: revert;
-        background-color: #ffffff;
-    }
-}
-
-#about-me{
-    top:28vh;
-}
-
-#education{
-    top:43vh;
-}
-
-#projects{
-    top:58vh;
-}
-
-#skills{
-    top:73vh;
-}
-
-#technologies{
-    top:88vh;
-}
 
 
 #bike{
     size: 9vh;
     position: absolute;
     left: 10vw;
-    top: 50vh;
+    top: 15vh;
     display: flex;
     flex-direction: row;
 }
@@ -143,7 +106,7 @@ body {
     size: 12vh;
     position: absolute;
     right: 10vw;
-    top: 65vh;
+    top: 30vh;
     display: flex;
     flex-direction: row;
 }
@@ -153,7 +116,7 @@ body {
     size: 12vh;
     position: absolute;
     left: 10vw;
-    top: 80vh;
+    top: 45vh;
     display: flex;
     flex-direction: row;
 }
@@ -163,7 +126,7 @@ body {
     size: 14vh;
     position: absolute;
     right: 10vw;
-    top:  95vh;
+    top:  60vh;
     display: flex;
     flex-direction: row;
 }
@@ -172,7 +135,7 @@ body {
     size: 14vh;
     position: absolute;
     left: 10vw;
-    top:  55vh;
+    top:  30vh;
     display: flex;
     flex-direction: row;
 }
@@ -181,7 +144,7 @@ body {
     size: 14vh;
     position: absolute;
     left: 10vw;
-    top:  85vh;
+    top:  45vh;
     display: flex;
     flex-direction: row;
 }
@@ -190,7 +153,7 @@ body {
     size: 14vh;
     position: absolute;
     left: 10vw;
-    top:  65vh;
+    top:  45vh;
     display: flex;
     flex-direction: row;
     text-decoration: none;
@@ -202,11 +165,9 @@ body {
     size: 14vh;
     position: absolute;
     left: 10vw;
-    top:  60vh;
+    top:  15vh;
     display: flex;
     flex-direction: row;
-    text-decoration: none;
-    color: black;
 }
 
 
@@ -214,7 +175,7 @@ body {
     size: 14vh;
     position: absolute;
     left: 10vw;
-    top:  75vh;
+    top:  30vh;
     display: flex;
     flex-direction: row;
 }
@@ -223,98 +184,71 @@ body {
     size: 14vh;
     position: absolute;
     right: 10vw;
-    top:  90vh;
+    top:  45vh;
     display: flex;
     flex-direction: row;
 }
 
-.about-hidden{
-    display: none;
-    font-size: 1.2vw;
-}
-
-.education-hidden{
-    display: none;
-    font-size: 1.2vw;
-}
-
-.projects-hidden{
-    display: none;
-    font-size: 1.2vw;
-}
-
-.skills-hidden{
-    display: none;
-    font-size: 1.2vw;
-}
-
-.technologies-hidden{
-    position: absolute;
-    top:50vh;
-    margin: 3%;
-    flex-wrap: wrap;
-    display: none;
-    font-size: 1.2vw;
-
-}
-
 .picBike{
-
-    width: 8vw;
-    height: auto;
-    transition: all 0.5s ease;
+    height: 8vh;
+    width: auto;
 }
 
 
 .picChess{
-    width: 7vw;
-    height: auto;
+    height: 7vh;
+    width: auto;
 }
 
 .picPlane{
-    width: 7vw;
-    height: auto;
+    height: 7vh;
+    width: auto;
 }
 
 .picCrypto{
-    width: 9vw;
-    height: auto;
+    height: 9vh;
+    width: auto;
 }
 
 .picUniversity{
-    width: 9vw;
-    height: auto;
+    height: 13vh;
+    width: auto;
 }
 
 .picCodecool{
-    width: 9vw;
-    height: auto;
+    height: 13vh;
+    width: auto;
 }
 
 .picGithub{
-    width: 12vw;
-    height: auto;
+    height: 20vh;
+    width: auto;
 }
 
 .picTeamwork{
-    width: 10vw;
-    height: auto;
+    height: 8vh;
+    width: auto;
 }
 
 .picAdaptivity{
-    width: 10vw;
-    height: auto;
+    height: 8vh;
+    width: auto;
 }
 
 .picCreativity{
-    width: 10vw;
-    height: auto;
+    height: 8vh;
+    width: auto;
 }
 
 .tech-pics{
-    margin: 2%;
     height: 8vh;
     width: auto;
+}
+
+#content4{
+    position: absolute;
+    top: 20vh;
+    margin: 5vh
 }
 
 #picSpring{
