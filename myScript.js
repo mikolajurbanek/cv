@@ -3,12 +3,10 @@
 
 const page = document.querySelector(".page");
 const pageContainer = document.querySelector(".page-container");
-//lol
+
 const tabs = Array.from(document.querySelectorAll('.bar'));
 const content = Array.from(document.querySelectorAll('.content'));
 
-
-let flag = 0;
 
 
 // items
