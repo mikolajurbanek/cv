@@ -39,7 +39,6 @@ body {
     height: 90%;
     background-color: #ffffff;
     box-shadow: 5px 10px 18px #888888;
-    position: relative;
 }
 
 .infos{
@@ -56,23 +55,21 @@ body {
     justify-content: center;
     margin-left: 13%;
     width: 20vw;
-    /*height: 100%;*/
     font-size: 1vw;
 }
 
 .bars {
-    margin-bottom: 20%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    width: 70%;
+    width: 100%;
     height: 80%;
     font-size: 2vh;
+    visibility: visible;
 }
 
 .bar {
-    margin-top: 5vh;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,37 +78,57 @@ body {
     height: 10vh;
     width: 80%;
     box-shadow: 5px 10px 18px #888888;
-    visibility: visible;
-    opacity: 1;
-    transition:visibility 0.3s linear,opacity 0.3s linear;
-    /*position: relative;*/
+    position: absolute;
+    transform: translateZ(10px);
+
+
+}
+
+.bar:hover{
+    transition: all 0.3s ease;
+    transform: translateZ(120px);
+}
+
+
+@keyframes dupa {
+    0% {
+    }
+    100% {
+        top: 28vh;
+        background-color: #c6e7f6;
+    }
+}
+
+@keyframes zupa {
+    0%{
+        top: 28vh;
+    }
+    100%{
+        top: revert;
+        background-color: #ffffff;
+    }
 }
 
 #about-me{
-    position: absolute;
-    top: 30vh;
-    /*transition: all 1s ease ;*/
+    top:28vh;
 }
 
 #education{
-    position: absolute;
-    top: 45vh;
+    top:43vh;
 }
 
 #projects{
-    position: absolute;
-    top: 60vh;
+    top:58vh;
 }
 
 #skills{
-    position: absolute;
-    top: 75vh;
+    top:73vh;
 }
 
 #technologies{
-    position: absolute;
-    top: 90vh;
+    top:88vh;
 }
+
 
 #bike{
     size: 9vh;
@@ -252,76 +269,64 @@ body {
 .picChess{
     width: 7vw;
     height: auto;
-    transition: all 0.5s ease;
 }
 
 .picPlane{
     width: 7vw;
     height: auto;
-    transition: all 0.5s ease;
 }
 
 .picCrypto{
     width: 9vw;
     height: auto;
-    transition: all 0.5s ease;
 }
 
 .picUniversity{
     width: 9vw;
     height: auto;
-    transition: all 0.5s ease;
 }
 
 .picCodecool{
     width: 9vw;
     height: auto;
-    transition: all 0.5s ease;
 }
 
 .picGithub{
     width: 12vw;
     height: auto;
-    transition: all 0.5s ease;
 }
 
 .picTeamwork{
     width: 10vw;
     height: auto;
-    transition: all 0.5s ease;
 }
 
 .picAdaptivity{
     width: 10vw;
     height: auto;
-    transition: all 0.5s ease;
 }
 
 .picCreativity{
     width: 10vw;
     height: auto;
-    transition: all 0.5s ease;
 }
 
 .tech-pics{
     margin: 2%;
     height: 8vh;
     width: auto;
-    transition: all 0.5s ease;
 }
 
 #picSpring{
     margin-top: 9%;
     height: 6vh;
     width: auto;
-    transition: all 0.5s ease;
 }
 
 #picTrello{
     margin-top: 5%;
     width: auto;
     height: 4vh;
-    transition: all 0.5s ease;
 }
 
 
@@ -329,51 +334,42 @@ body {
     margin-top: 4%;
     height: 7vh;
     width: auto;
-    transition: all 0.5s ease;
 }
 
 #picJava{
     height: 18vh;
     width: auto;
-
-    transition: all 0.5s ease;
 }
 
 #picLucidChart{
     margin-top: 3%;
-    transition: all 0.5s ease;
 }
 
 #picPostgresql{
     height: 15vh;
     width: auto;
-    transition: all 0.5s ease;
 }
+
 #picPython{
     margin-top: 5%;
     height: 6vh;
     width: auto;
-
-    transition: all 0.5s ease;
 }
 
 #picVS{
     margin-top: 4%;
     height: 7vh;
     width: auto;
-    transition: all 0.5s ease;
 }
 
 #picGitTech{
     height: 11vh;
     width: auto;
-    transition: all 0.5s ease;
 }
 
 #picTrio{
     height: 9vh;
     width: auto;
-    transition: all 0.5s ease;
 }
 
 #picFigma{
